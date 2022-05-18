@@ -48,7 +48,7 @@ msg17='\033[1;37m\033[1;33m(Sem informação - Para Cancelar Digite CRTL + C)\03
 
     intallv2ray () {
     apt install python3-pip -y 
-    source <(curl -sL https://raw.githubusercontent.com/alfainternet/SSHPLUS/main/Modulos/v2ray)
+    source <(curl -sL https://raw.githubusercontent.com/alfainternet/sshplus2/main/Sistema/v2ray)
     echo -e "\033[1;37m\033[1;33mInstalado com Exito!\033[1;31m"
     USRdatabase="/etc/SSHPlus/RegV2ray"
     [[ ! -e ${USRdatabase} ]] && touch ${USRdatabase}
@@ -91,7 +91,7 @@ msg17='\033[1;37m\033[1;33m(Sem informação - Para Cancelar Digite CRTL + C)\03
     fun_v2raymanager
     }
     unistallv2 () {
-    source <(curl -sL https://raw.githubusercontent.com/alfainternet/SSHPLUS/main/Modulos/v2ray) --remove > /dev/null 2>&1
+    source <(curl -sL https://raw.githubusercontent.com/alfainternet/sshplus2/main/Sistema/v2ray) --remove > /dev/null 2>&1
     rm -rf /etc/SSHPlus/RegV2ray > /dev/null 2>&1
     echo -e "\n\033[1;32mV2RAY REMOVIDO COM SUCESSO !\033[0m"
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -459,7 +459,7 @@ msg17='\033[1;37m\033[1;33m(Sem informação - Para Cancelar Digite CRTL + C)\03
 		while true $x != "ok"; do
 			[[ ! -e '/home/sshplus' ]] && exit 0
 			clear
-			echo -e "\E[44;1;37m                GERENCIADOR V2RAY                 \E[0m\n"
+			echo -e "\E[44;1;37m             🌟  GERENCIADOR V2RAY  🌟              \E[0m\n"
 
 			xv2ray1=`if netstat -tunlp |grep v2ray 1> /dev/null 2> /dev/null; then
 			echo -e "\e[92m ATIVADO"
