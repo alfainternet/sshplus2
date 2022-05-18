@@ -25,6 +25,7 @@ chmod +x /bin/verifbot
 wget https://raw.githubusercontent.com/alfainternet/sshplus2/main/Sistema/alterarsenha.sh -O /bin/alterarsenha > /dev/null 2>&1
 chmod +x /bin/alterarsenha
 wget https://raw.githubusercontent.com/alfainternet/sshplus2/main/Sistema/criarusuario.sh -O /bin/criarusuario > /dev/null 2>&1
+wget https://raw.githubusercontent.com/alfainternet/sshplus2/main/Sistema/v2raymanager -O /bin/v2raymanager > /dev/null 2>&1
 chmod +x /bin/criarusuario
 wget https://raw.githubusercontent.com/alfainternet/sshplus2/main/Sistema/delhost.sh -O /bin/delhost > /dev/null 2>&1
 chmod +x /bin/delhost
