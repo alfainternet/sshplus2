@@ -211,8 +211,9 @@ elif [[ "$resposta" = '2' ]]; then
     service ssh restart >/dev/null 2>&1
     echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m 16983:16085\033[0m"
     rm $_Ink/listARM >/dev/null 2>&1
-    wget -P $_Ink https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/listARM > /dev/null 2>&1; verif_key
-sleep 1s
+    wget -P $_Ink https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/listARM >/dev/null 2>&1
+    verif_key2
+    sleep 3s
 rm versao* > /dev/null 2>&1
 wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/versao > /dev/null 2>&1
 wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/v2raymanager > /dev/null 2>&1
